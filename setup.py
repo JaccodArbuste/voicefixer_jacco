@@ -37,7 +37,7 @@ VERSION = "0.1.2"
 REQUIRED = [
     "librosa",
     "matplotlib",
-    "torch>=1.7.0",
+    "torch>=2.1.0",
     "progressbar",
     "torchlibrosa",
     "GitPython",
