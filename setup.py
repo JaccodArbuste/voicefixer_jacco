@@ -37,11 +37,11 @@ VERSION = "0.1.2"
 REQUIRED = [
     "librosa",
     "matplotlib",
-    "torch>=2.1.0",
+    "torch",
     "progressbar",
     "torchlibrosa",
     "GitPython",
-    "streamlit>=1.12.0",
+    "streamlit",
     "pyyaml",
 ]
 
