@@ -31,23 +31,23 @@ class Generator(nn.Module):
         if self.use_condnet:
             cond_channels = Config.cond_channels
             self.condnet = nn.Sequential(
-                nn.utils.parametrizations.weight_norm(
+                nn.utils.parametrizations.weight(
                     nn.Conv1d(in_channels, cond_channels, kernel_size=3, padding=1)
                 ),
                 nn.ELU(),
-                nn.utils.parametrizations.weight_norm(
+                nn.utils.parametrizations.weight(
                     nn.Conv1d(cond_channels, cond_channels, kernel_size=3, padding=1)
                 ),
                 nn.ELU(),
-                nn.utils.parametrizations.weight_norm(
+                nn.utils.parametrizations.weight(
                     nn.Conv1d(cond_channels, cond_channels, kernel_size=3, padding=1)
                 ),
                 nn.ELU(),
-                nn.utils.parametrizations.weight_norm(
+                nn.utils.parametrizations.weight(
                     nn.Conv1d(cond_channels, cond_channels, kernel_size=3, padding=1)
                 ),
                 nn.ELU(),
-                nn.utils.parametrizations.weight_norm(
+                nn.utils.parametrizations.weight(
                     nn.Conv1d(cond_channels, cond_channels, kernel_size=3, padding=1)
                 ),
                 nn.ELU(),
